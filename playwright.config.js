@@ -79,3 +79,13 @@ export default defineConfig({
   // },
 });
 
+// playwright.config.js
+module.exports = {
+  timeout: 60000, // 60 seconds for each test
+  use: {
+    actionTimeout: 60000, // for actions like click, fill
+    navigationTimeout: 60000,
+  },
+};
+
+
